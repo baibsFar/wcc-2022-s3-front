@@ -839,6 +839,52 @@ html {
   }
 }
 
+/* results */
+
+.results {
+  position: relative;
+  width: 100%;
+  padding: 1.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.cards-container {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+
+.card {
+  position: relative;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  height: 7rem;
+  width: 11rem;
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 39 38 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 1024px) {
+  .card {
+    height: 11rem;
+    width: 20rem;
+  }
+}
+
 /* right side */
 
 .right {
@@ -1003,6 +1049,19 @@ html {
   margin-right: 1rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.hidden {
+  display: none;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1016,8 +1075,36 @@ html {
   background-color: rgb(118 110 102 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#EFEFEF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 239 239 / var(--tw-bg-opacity));
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 12px;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .text-\[\#fff\] {
@@ -1025,11 +1112,25 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-gris {
+  --tw-text-opacity: 1;
+  color: rgb(118 110 102 / var(--tw-text-opacity));
+}
+
+.text-noir {
+  --tw-text-opacity: 1;
+  color: rgb(41 39 38 / var(--tw-text-opacity));
+}
+
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 @media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -1037,5 +1138,14 @@ html {
 
   .lg\:text-left {
     text-align: left;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-base {
+    font-size: 14px;
   }
 }

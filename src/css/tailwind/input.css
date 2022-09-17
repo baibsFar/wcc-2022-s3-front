@@ -132,6 +132,23 @@
         @apply relative hidden lg:flex bg-orange;
     }
 
+    /* results */
+    .results {
+        @apply relative p-6 w-full px-10 ;
+    }
+
+    .cards-container {
+        @apply relative w-full overflow-x-auto;
+    }
+
+    .cards {
+        @apply relative w-fit flex flex-row justify-between items-center overflow-x-auto;
+    }
+
+    .card {
+        @apply relative w-44 lg:w-80 h-28 lg:h-44 bg-noir mx-3 rounded-md;
+    }
+
     /* right side */
     .right {
         background: url(../../../assets/img/right-side.jpg);
