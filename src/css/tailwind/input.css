@@ -78,7 +78,24 @@
     .menu-item a {
         @apply
             text-sm mx-3
-            lg:text-base text-gris;
+            lg:text-base text-gris flex flex-col justify-center items-center;
+    }
+
+    .menu-item a svg {
+        @apply block my-1 lg:my-2 ;
+    }
+
+    .menu-item a svg path {
+        @apply stroke-[transparent];
+    }
+
+    .menu-item a.active {
+        @apply
+            text-noir;
+    }
+
+    .menu-item a.active svg path {
+        @apply stroke-orange;
     }
 
     /* right side */
