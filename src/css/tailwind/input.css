@@ -98,6 +98,25 @@
         @apply stroke-orange;
     }
 
+    /* search input */
+    .search-input {
+        @apply 
+            relative w-full h-10 p-6 flex flex-row justify-start items-center
+            lg:px-10;
+    }
+
+    .search-input-self {
+        @apply relative w-full bg-[#F7F5F6] py-3 flex flex-row justify-start items-center lg:bg-[transparent];
+    }
+
+    #search {
+        @apply relative bg-[transparent] w-full h-full mx-2 outline-none lg:text-3xl lg:text-noir lg:placeholder:text-noir;
+    }
+
+    .circle-search {
+        @apply relative hidden lg:block lg:mx-4;
+    }
+
     /* right side */
     .right {
         background: url(../../../assets/img/right-side.jpg);
