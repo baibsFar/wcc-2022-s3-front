@@ -567,19 +567,33 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
-.font-\[\'Okine-regular\'\] {
-  font-family: 'Okine-regular';
+.text-base {
+  font-size: 14px;
 }
 
-.font-sans {
-  font-family: Okine Regular, Okine Medium, sans-serif;
+.text-sm {
+  font-size: 12px;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+@media (min-width: 640px) {
+  .sm\:text-sm {
+    font-size: 12px;
+  }
 }
 
-.font-bold {
-  font-weight: 700;
+@media (min-width: 768px) {
+  .md\:text-base {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-base {
+    font-size: 14px;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }

@@ -11,6 +11,10 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': 'Okine Regular, Okine Medium, sans-serif'
+      },
+      fontSize: {
+        'sm': '12px',
+        'base': '14px'
       }
     }
   },
