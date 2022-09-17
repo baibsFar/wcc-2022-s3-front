@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Made okine regular";
+
+  src: url(../../../assets/font/made-okine-sans-personal-use-cufonfonts-webfont/MADEOkineSansPERSONALUSE-Regular.woff);
+}
+
+@font-face {
+  font-family: "Made okine medium";
+
+  src: url(../../../assets/font/made-okine-sans-personal-use-cufonfonts-webfont/MADEOkineSansPERSONALUSE-Medium.woff);
+}
+
 /*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 */
@@ -42,7 +54,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Okine Regular, Okine Medium, sans-serif;
   /* 4 */
 }
 
@@ -410,6 +422,10 @@ video {
   height: auto;
 }
 
+html {
+  font-family: "Okine Regular", "Okine Medium";
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -549,4 +565,21 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+.font-\[\'Okine-regular\'\] {
+  font-family: 'Okine-regular';
+}
+
+.font-sans {
+  font-family: Okine Regular, Okine Medium, sans-serif;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.font-bold {
+  font-weight: 700;
 }

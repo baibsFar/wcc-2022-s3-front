@@ -8,6 +8,11 @@ module.exports = {
       'gris': '#F7F5F6',
       'jaune': '#FFCE31'
     },
+    extend: {
+      fontFamily: {
+        'sans': 'Okine Regular, Okine Medium, sans-serif'
+      }
+    }
   },
   plugins: [],
 }
