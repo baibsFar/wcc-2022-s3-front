@@ -16,10 +16,10 @@
 
     /* left side */
     .left {
-        @apply relative basis-full overflow-x-hidden overflow-y-auto lg:basis-2/3;
+        @apply relative basis-full overflow-x-hidden overflow-y-auto lg:basis-2/3 bg-[#F7F5F6];
     }
     .navbar {
-        @apply relative w-full p-6 flex flex-row justify-between items-center lg:h-28 lg:px-10 lg:py-6 lg:bg-[#f9f9f9];
+        @apply relative w-full p-6 flex flex-row justify-between items-center lg:h-28 lg:px-10 lg:py-6 lg:bg-[#ececec];
     }
 
     /* menu cheese */
@@ -87,7 +87,7 @@
     }
 
     .search-input-self {
-        @apply relative w-full bg-[#F7F5F6] py-3 flex flex-row justify-start items-center rounded-md lg:bg-[transparent];
+        @apply relative w-full bg-[#ececec] py-3 flex flex-row justify-start items-center rounded-md lg:bg-[transparent];
     }
 
     #search {
@@ -147,6 +147,23 @@
 
     .card {
         @apply relative w-44 lg:w-80 h-28 lg:h-44 bg-noir mx-3 rounded-md;
+    }
+
+    /* matches */
+    .matches {
+        @apply relative p-6 lg:px-10;
+    }
+
+    .match-header {
+        @apply relative w-full flex flex-row justify-between items-center;
+    }
+
+    .match-grids {
+        @apply relative grid grid-cols-1 lg:grid-cols-2 gap-x-7 gap-y-3 my-7;
+    }
+
+    .match-grid {
+        @apply h-20 lg:h-32 rounded-lg bg-[#fff];
     }
 
     /* right side */

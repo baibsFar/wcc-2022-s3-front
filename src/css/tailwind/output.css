@@ -445,6 +445,8 @@ html {
   flex-basis: 100%;
   overflow-y: auto;
   overflow-x: hidden;
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 245 246 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 1024px) {
@@ -467,7 +469,7 @@ html {
   .navbar {
     height: 7rem;
     --tw-bg-opacity: 1;
-    background-color: rgb(249 249 249 / var(--tw-bg-opacity));
+    background-color: rgb(236 236 236 / var(--tw-bg-opacity));
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     padding-top: 1.5rem;
@@ -656,7 +658,7 @@ html {
   justify-content: flex-start;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(247 245 246 / var(--tw-bg-opacity));
+  background-color: rgb(236 236 236 / var(--tw-bg-opacity));
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
@@ -885,6 +887,59 @@ html {
   }
 }
 
+/* matches */
+
+.matches {
+  position: relative;
+  padding: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .matches {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.match-header {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.match-grids {
+  position: relative;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  -moz-column-gap: 1.75rem;
+       column-gap: 1.75rem;
+  row-gap: 0.75rem;
+}
+
+@media (min-width: 1024px) {
+  .match-grids {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.match-grid {
+  height: 5rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 1024px) {
+  .match-grid {
+    height: 8rem;
+  }
+}
+
 /* right side */
 
 .right {
@@ -1044,6 +1099,10 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
+.relative {
+  position: relative;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -1054,8 +1113,17 @@ html {
   margin-bottom: 1.25rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.flex {
+  display: flex;
 }
 
 .hidden {
@@ -1064,6 +1132,18 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .rounded {
@@ -1078,6 +1158,11 @@ html {
 .bg-\[\#EFEFEF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(239 239 239 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#e6e6e6\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(230 230 230 / var(--tw-bg-opacity));
 }
 
 .px-3 {
