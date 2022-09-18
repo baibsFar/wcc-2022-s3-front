@@ -32,10 +32,10 @@
         @apply hidden lg:w-64 lg:h-16 lg:flex lg:flex-row lg:justify-between lg:items-center;
     }
     .nav-item {
-        @apply hidden lg:w-12 lg:h-12 lg:flex lg:flex-row lg:justify-center lg:items-center;
+        @apply hidden lg:w-12 lg:h-12 lg:flex lg:flex-row lg:justify-center lg:items-center hover:bg-orange hover:-translate-y-2 rounded-md duration-200;
     }
     .nav-item.active {
-        @apply bg-noir text-[#fff] rounded-md;
+        @apply bg-noir text-[#fff];
     }
 
     .nav-item.active .iconify {
@@ -104,11 +104,11 @@
     }
 
     .filter {
-        @apply relative bg-[transparent] lg:bg-noir text-sm py-3 px-1 lg:px-4 w-full lg:h-12 mx-2 gap-1 flex flex-row justify-center lg:justify-between items-center rounded-md text-noir lg:text-[#fff];
+        @apply relative bg-[transparent] lg:bg-noir text-sm py-3 px-1 lg:px-4 w-full lg:h-12 mx-2 gap-1 flex flex-row justify-center lg:justify-between items-center rounded-md text-noir lg:text-[#fff] transition-all hover:-translate-y-2 hover:bg-orange hover:text-orange hover:bg-opacity-10 duration-200;
     }
     
     .filter.active {
-        @apply bg-orange text-[#fff] lg:bg-noir;
+        @apply bg-orange text-[#fff] lg:bg-noir hover:-translate-y-2 hover:bg-orange hover:text-orange hover:bg-opacity-10;
     }
 
     .filter-icon {
@@ -220,7 +220,7 @@
     }
 
     .match-grid-right {
-        @apply relative bg-[#F4933844] w-11 h-11 lg:w-16 lg:h-16 rounded-lg flex justify-center items-center;
+        @apply relative bg-[#F4933844] w-11 h-11 lg:w-16 lg:h-16 rounded-lg flex justify-center items-center hover:bg-[#000] transition-all duration-200;
     }
 
     /* right side */

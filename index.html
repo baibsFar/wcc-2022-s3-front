@@ -5,15 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/tailwind/output.css">
+    <link rel="stylesheet" href="src/css/loader.css">
     <title>WCC 2022 S3</title>
 </head>
 <body>
 
+    <div class="loader z-20">
+        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#00000000] to-[#000000aa] z-0"></div>
+        <p class="loader-title z-10">Loading..</p>
+        <div class="loader-spinner z-10"></div>
+    </div>
+
     <main class="main">
+
+        <!-- Left side -->
         <section class="left">
+            <div class="absolute top-0 left-0 w-full h-full bg-noir z-10 flex flex-col justify-start items-center transition-all duration-200 -translate-x-full" id="burger-menu">
+                <h1 class="relative w-full py-16 text-6xl flex justify-center items-center text-orange">
+                    <iconify-icon icon="healthicons:happy-outline" width="80" height="80"></iconify-icon>
+                    &nbsp;What's up&nbsp;
+                    <iconify-icon icon="healthicons:happy-outline" width="80" height="80"></iconify-icon>
+                </h1>
+                <div class="relative w-full flex flex-row justify-center items-center text-[#fff] text-4xl py-5">
+                    <svg width="64" height="64" viewBox="-4 -4 24 24" fill="none" class="mx-5" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.1 0H2.16H5.1C5.376 0 5.6112 0 5.82 0.048C6.14317 0.125529 6.43856 0.291013 6.67345 0.526117C6.90834 0.76122 7.07356 1.05676 7.1508 1.38C7.2 1.5888 7.2 1.8252 7.2 2.1V5.1V5.10001C7.2 5.37601 7.2 5.6112 7.152 5.82C7.07447 6.14317 6.90899 6.43856 6.67388 6.67345C6.43878 6.90834 6.14324 7.07356 5.82 7.1508C5.6112 7.2 5.3748 7.2 5.1 7.2H2.1C1.824 7.2 1.5888 7.2 1.38 7.152C1.05683 7.07447 0.761439 6.90899 0.526547 6.67388C0.291656 6.43878 0.126438 6.14324 0.0492001 5.82C0 5.6112 0 5.3748 0 5.1V2.1C0 1.824 0 1.5888 0.0479994 1.38C0.125529 1.05683 0.291013 0.761439 0.526116 0.526547C0.76122 0.291656 1.05676 0.126438 1.38 0.0492C1.5888 0 1.8252 0 2.1 0Z" fill="#766E66"/>
+                        <path d="M10.8 0H10.86H13.8C14.076 0 14.3112 0 14.52 0.048C14.8431 0.125529 15.1385 0.291013 15.3734 0.526117C15.6083 0.76122 15.7735 1.05676 15.8508 1.38C15.9 1.5888 15.9 1.8252 15.9 2.1V5.1V5.10001C15.9 5.37601 15.9 5.6112 15.852 5.82C15.7744 6.14317 15.6089 6.43856 15.3738 6.67345C15.1387 6.90834 14.8432 7.07356 14.52 7.1508C14.3112 7.2 14.0748 7.2 13.8 7.2H10.8C10.524 7.2 10.2888 7.2 10.08 7.152C9.75678 7.07447 9.46139 6.90899 9.2265 6.67388C8.99161 6.43878 8.82639 6.14324 8.74915 5.82C8.69995 5.6112 8.69995 5.3748 8.69995 5.1V2.1C8.69995 1.824 8.69995 1.5888 8.74795 1.38C8.82548 1.05683 8.99096 0.761439 9.22607 0.526547C9.46117 0.291656 9.75671 0.126438 10.08 0.0492C10.2888 0 10.5252 0 10.8 0Z" fill="#C9C5C2"/>
+                        <path d="M2.1 8.70001H2.16H5.1C5.376 8.70001 5.6112 8.70001 5.82 8.74801C6.14317 8.82554 6.43856 8.99103 6.67345 9.22613C6.90834 9.46123 7.07356 9.75678 7.1508 10.08C7.2 10.2888 7.2 10.5252 7.2 10.8V13.8V13.8C7.2 14.076 7.2 14.3112 7.152 14.52C7.07447 14.8432 6.90899 15.1386 6.67388 15.3735C6.43878 15.6084 6.14324 15.7736 5.82 15.8508C5.6112 15.9 5.3748 15.9 5.1 15.9H2.1C1.824 15.9 1.5888 15.9 1.38 15.852C1.05683 15.7745 0.761439 15.609 0.526547 15.3739C0.291656 15.1388 0.126438 14.8432 0.0492001 14.52C0 14.3112 0 14.0748 0 13.8V10.8C0 10.524 0 10.2888 0.0479994 10.08C0.125529 9.75685 0.291013 9.46145 0.526116 9.22656C0.76122 8.99167 1.05676 8.82645 1.38 8.74921C1.5888 8.70001 1.8252 8.70001 2.1 8.70001Z" fill="#766E66"/>
+                        <path d="M10.8 8.70001H10.86H13.8C14.076 8.70001 14.3112 8.70001 14.52 8.74801C14.8431 8.82554 15.1385 8.99103 15.3734 9.22613C15.6083 9.46123 15.7735 9.75678 15.8508 10.08C15.9 10.2888 15.9 10.5252 15.9 10.8V13.8V13.8C15.9 14.076 15.9 14.3112 15.852 14.52C15.7744 14.8432 15.6089 15.1386 15.3738 15.3735C15.1387 15.6084 14.8432 15.7736 14.52 15.8508C14.3112 15.9 14.0748 15.9 13.8 15.9H10.8C10.524 15.9 10.2888 15.9 10.08 15.852C9.75678 15.7745 9.46139 15.609 9.2265 15.3739C8.99161 15.1388 8.82639 14.8432 8.74915 14.52C8.69995 14.3112 8.69995 14.0748 8.69995 13.8V10.8C8.69995 10.524 8.69995 10.2888 8.74795 10.08C8.82548 9.75685 8.99096 9.46145 9.22607 9.22656C9.46117 8.99167 9.75671 8.82645 10.08 8.74921C10.2888 8.70001 10.5252 8.70001 10.8 8.70001Z" fill="#766E66"/>
+                    </svg>
+                    Dashboard  
+                </div>
+                <div class="relative w-full flex flex-row justify-center items-center text-[#fff] text-4xl py-5">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" class="mx-5" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 9C19.6569 9 21 7.65685 21 6C21 4.34315 19.6569 3 18 3C16.3431 3 15 4.34315 15 6C15 7.65685 16.3431 9 18 9Z" fill="#C9C5C2"/>
+                        <path d="M13 6C13 5.288 13.153 4.613 13.422 4H6C4.897 4 4 4.897 4 6V18C4 19.103 4.897 20 6 20H18C19.103 20 20 19.103 20 18V10.578C19.3698 10.8559 18.6887 10.9997 18 11C16.6739 11 15.4021 10.4732 14.4645 9.53553C13.5268 8.59785 13 7.32608 13 6Z" fill="#766E66"/>
+                    </svg> 
+                    Notification                           
+                </div>
+                <div class="relative w-full flex flex-row justify-center items-center text-[#fff] text-4xl py-5">
+                    <iconify-icon icon="fa6-solid:bag-shopping" width="64" height="64" class="iconify mx-5"></iconify-icon>
+                    Shopping
+                </div>
+                <div class="relative w-full flex flex-row justify-center items-center text-[#fff] text-4xl py-5">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="#fff" class="mx-5" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_4_136)">
+                        <path d="M12 4.12201V20.6925C17.178 17.1405 20.0475 13.8795 21.429 11.157C22.8615 8.32801 22.686 6.11401 21.9 4.57951C20.229 1.31701 15.6 0.420012 13.0755 3.01501L12 4.12201ZM12 22.5C-10.9995 7.30201 4.91846 -4.55999 11.736 1.71451C11.826 1.79701 11.9145 1.88251 12 1.97101C12.0846 1.88259 12.1727 1.79753 12.264 1.71601C19.08 -4.56299 34.9995 7.30051 12 22.5Z" fill="#766E66"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_4_136">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>  
+                    Favorites                          
+                </div>
+                <div class="relative w-full flex flex-row justify-center items-center text-orange text-4xl py-5" id="exit-btn">
+                    <iconify-icon icon="ion:exit" width="64" height="64" class="iconify mx-5"></iconify-icon> 
+                    Exit                        
+                </div>
+            </div>
             <nav class="navbar">
                 <div class="menu-cheese">
-                    <iconify-icon icon="gg:menu-cheese" width="24px" height="20px"></iconify-icon>
+                    <iconify-icon id="cheese-btn" icon="gg:menu-cheese" width="24px" height="20px"></iconify-icon>
                 </div>
                 <div class="nav-menu">
                     <div class="nav-item">
@@ -289,6 +342,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Right side -->
         <section class="right">
             <div class="absolute top-0 left-0 w-full h-full z-0">
                 <div class="absolute top-[calc(17%)] left-[calc(18%)] w-52 h-72">
@@ -360,6 +415,8 @@
     </main>
     
 
+    <script src="src/js/main.js"></script>
+    <script src="src/js/loader.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.0/dist/iconify-icon.min.js"></script>
 </body>
 </html>
