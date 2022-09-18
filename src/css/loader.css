@@ -25,6 +25,7 @@
 
 .loader-title {
     font-size: 2.3vw;
+    color: #fff;
 }
 
 @keyframes spinner {

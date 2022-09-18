@@ -19,7 +19,7 @@ function setLoader(_backgroundColor = '#fff', _color = '#000', _duration = 500, 
     loaderSpinner.style.animationDuration = `${_duration}ms`
 }
 
-setLoader('#000', '', 800, 'Welcome', '#F49338')
+setLoader('#fff', '', 800, 'Welcome', '#fff')
 
 setTimeout(() => {
     loader.style.animationName = 'fadeout'
