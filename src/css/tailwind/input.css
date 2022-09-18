@@ -62,7 +62,7 @@
     }
 
     .menu-item a {
-        @apply text-sm mx-3 lg:text-base text-gris flex flex-col justify-center items-center;
+        @apply text-sm mx-3 lg:text-base text-gris flex flex-col justify-center items-center hover:text-orange transition-colors duration-200;
     }
 
     .menu-item a svg {
@@ -104,7 +104,7 @@
     }
 
     .filter {
-        @apply relative bg-[transparent] lg:bg-noir text-sm py-3 px-4 w-full lg:h-12 mx-2 gap-1 flex flex-row justify-center lg:justify-between items-center rounded-md text-noir lg:text-[#fff];
+        @apply relative bg-[transparent] lg:bg-noir text-sm py-3 px-1 lg:px-4 w-full lg:h-12 mx-2 gap-1 flex flex-row justify-center lg:justify-between items-center rounded-md text-noir lg:text-[#fff];
     }
     
     .filter.active {
@@ -138,7 +138,7 @@
     }
 
     .cards-container {
-        @apply relative w-full overflow-x-auto;
+        @apply relative w-full h-fit py-5 overflow-x-auto;
     }
 
     .cards {
@@ -146,7 +146,28 @@
     }
 
     .card {
-        @apply relative w-44 lg:w-80 h-28 lg:h-44 bg-noir mx-3 rounded-md;
+        @apply relative w-44 lg:w-80 h-28 lg:h-44 bg-no-repeat bg-center bg-cover mx-3 my-2 rounded-lg overflow-hidden hover:scale-105 transition-all duration-200;
+    }
+
+    
+    #card-1 {
+        background-image: url(../../../assets/img/spring.jpeg);
+    }
+
+    #card-2 {
+        background-image: url(../../../assets/img/arne.jpeg);
+    }
+    
+    #card-3 {
+        background-image: url(../../../assets/img/spring-2.jpeg);
+    }
+
+    .card-gradient {
+        @apply absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#00000000] to-[#00000088] z-0 rounded-lg;
+    }
+
+    .card-content {
+        @apply absolute bottom-0 left-0 w-full py-2 lg:py-3 px-5 text-[#fff];
     }
 
     /* matches */
@@ -163,7 +184,43 @@
     }
 
     .match-grid {
-        @apply h-20 lg:h-32 rounded-lg bg-[#fff];
+        @apply h-20 lg:h-32 px-2 lg:px-3 rounded-lg bg-[#fff] my-2 lg:my-3 flex flex-row justify-between items-center lg:hover:-translate-y-3 lg:transition-all lg:duration-200;
+    }
+
+    .match-grid-left {
+        @apply relative flex flex-row justify-between items-center;
+    }
+
+    .match-grid-img {
+        @apply relative h-16 w-16 lg:w-28 lg:h-28 rounded-lg;
+    }
+
+    #match-grid-img-1 {
+        background: url(../../../assets/img/archway.jpeg);
+        @apply bg-no-repeat bg-center bg-cover;
+    }
+
+    #match-grid-img-2 {
+        background: url(../../../assets/img/connor.jpeg);
+        @apply bg-no-repeat bg-center bg-cover;
+    }
+    
+    #match-grid-img-3 {
+        background: url(../../../assets/img/phoenician.jpeg);
+        @apply bg-no-repeat bg-center bg-cover;
+    }
+
+    #match-grid-img-4 {
+        background: url(../../../assets/img/grand.jpeg);
+        @apply bg-no-repeat bg-center bg-cover;
+    }
+
+    .match-grid-content {
+        @apply relative h-16 lg:h-28 ml-4 flex flex-col justify-center items-start;
+    }
+
+    .match-grid-right {
+        @apply relative bg-[#F4933844] w-11 h-11 lg:w-16 lg:h-16 rounded-lg flex justify-center items-center;
     }
 
     /* right side */
